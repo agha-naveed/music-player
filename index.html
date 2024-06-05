@@ -20,20 +20,18 @@
                 </nav>
                 
                 <div class="artist-info">
-                    <img src="img/pic1.jpg" alt="" class="song-img"/>
-                    <h2>Ya Raza as Mola</h2>
-                    <p>Kazmi Brothers110</p>
+                    <img src="img/pic1.jpg" alt="" class="ar-img"/>
+                    <h2 class="s-title">Ya Raza as Mola</h2>
+                    <p class="ar-name">Kazmi Brothers110</p>
                 </div>
 
-                <audio controls id="song">
+                <audio id="song">
                     <source src="Audios/MOLA REZA JAAN as  Manqabat Imam Raza as  New Manqabat Kazmi Brothers 110  2024.mp3" type="audio/mp3" />
                 </audio>
                 <input type="range" value="0" id="progress">
                 <div class="controls">
                     <div><i class="fa-solid fa-backward"></i></div>
-                    <div onclick="playPause()">
-                        <i class="fa-solid fa-play"></i>
-                    </div>
+                    <div onclick="playPause()"><i class="fa-solid fa-play" id="control-icon"></i></div>
                     <div><i class="fa-solid fa-forward"></i></div>
                 </div>
             </div>
