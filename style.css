@@ -21,22 +21,48 @@ html , body{
     width: 100%;
     height: 100%;
     background-color: rgb(27, 27, 27);
-    display: grid;
+    display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
 .player {
+    left: 0;
+    z-index: 5;
+}
+.player-2 {
+    right: 0;
+    z-index: 1;
+}
+.player, .player-2 {
+    position: relative;
+    transition: 0.2s ease;
+    align-content: space-between;
     background-color: var(--bg-color);
     width: 340px;
     height: 500px;
     display: grid;
+    overflow: hidden;
 }
-.player nav {
+.playing {
+    transition: 0.5s ease;
+    background-color: var(--bg-color);
+    position: relative;
+    top: 0;
+    width: inherit;
+    justify-self: center;
+    z-index: 1;
+}
+.playing nav {
     display: grid;
     width: 100%;
     text-align: right;
 }
+.arrow-down {
+    height: fit-content;
+}
 .arrow-down i {
+    transition: 0.2s all;
     cursor: pointer;
     display: grid;
     justify-content: center;
@@ -48,9 +74,21 @@ html , body{
     padding: 5px 6px;
     border-radius: 50%;
     background-color: white;
-    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+    transform: rotate(180deg);
+    box-shadow: 0px -5px 5px rgba(255, 26, 26, 0.22);
 }
 
+.turn-arrow {
+    transform: rotate(0deg) !important;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22) !important;
+}
+
+.hide-r-player {
+    right: 180px !important;
+}
+.hide-l-player {
+    left: 180px !important;
+}
 
 /* ------- Artist Info ------- */
 .artist-info {
@@ -69,6 +107,16 @@ html , body{
     margin-top: 20px;
 }
 /* ------- Artist Info Ended ------- */
+
+/* -------- Controls -------- */
+.fixed-controls {
+    display: grid;
+    position: relative;
+    width: 100%;
+    gap: 20px;
+    z-index: 5;
+    background-color: var(--bg-color);
+}
 
 #progress {
     align-self: center;
@@ -128,7 +176,15 @@ html , body{
 #pause-song {
     display: none;
 }
-/* GLobal Css */
-.p-20 {
-    padding: 20px;
+
+/* Global CSS */
+.p-t-20 {
+    padding-top: 20px;
+}
+.p-b-20 {
+    padding-bottom: 20px;
+}
+.p-x-20 {
+    padding-left: 20px;
+    padding-right: 20px;
 }

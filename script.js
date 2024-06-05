@@ -26,15 +26,24 @@ let playPause = () => {
 }
 
 
-controlIcn.addEventListener('click', playPause);
-
 song.addEventListener('timeupdate', () => {
     progress.value = song.currentTime;
 });
 
 progress.addEventListener('input', () => {
-    song.play()
     song.currentTime = progress.value
     controlIcn.classList.add('fa-pause')
     controlIcn.classList.remove('fa-play')
+    song.play()
+})
+
+
+let main_player = document.querySelector('.player')
+let playlist_player = document.querySelector('.player-2')
+let arrow = document.querySelector('.arrow-down > i')
+
+arrow.addEventListener('click', () => {
+    arrow.classList.toggle('turn-arrow')
+    main_player.classList.toggle('hide-l-player')
+    playlist_player.classList.toggle('hide-r-player')
 })

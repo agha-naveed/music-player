@@ -12,30 +12,41 @@
     
     <div class="root">
         <div class="main-body">
-            <div class="player p-20">
-                <nav>
-                    <div class="arrow-down">
-                        <i class="fa-solid fa-angle-down"></i>
+            <div class="player hide-l-player">
+
+                <div class="playing p-t-20 p-x-20">
+                    <nav>
+                        <div class="arrow-down">
+                            <i class="fa-solid fa-angle-right turn-arrow"></i>
+                        </div>
+                    </nav>
+                    
+                    <div class="artist-info">
+                        <img src="img/pic1.jpg" alt="" class="ar-img"/>
+                        <h2 class="s-title">Ya Raza as Mola</h2>
+                        <p class="ar-name">Kazmi Brothers110</p>
                     </div>
-                </nav>
-                
-                <div class="artist-info">
-                    <img src="img/pic1.jpg" alt="" class="ar-img"/>
-                    <h2 class="s-title">Ya Raza as Mola</h2>
-                    <p class="ar-name">Kazmi Brothers110</p>
+
                 </div>
 
-                <audio id="song">
-                    <source src="Audios/MOLA REZA JAAN as  Manqabat Imam Raza as  New Manqabat Kazmi Brothers 110  2024.mp3" type="audio/mp3" />
-                </audio>
+                <div class="fixed-controls p-b-20 p-x-20">
+                    <audio id="song">
+                        <source src="Audios/MOLA REZA JAAN as  Manqabat Imam Raza as  New Manqabat Kazmi Brothers 110  2024.mp3" type="audio/mp3" />
+                    </audio>
 
-                <input type="range" value="0" id="progress">
-                
-                <div class="controls">
-                    <div><i class="fa-solid fa-backward"></i></div>
-                    <div onclick="playPause()"><i class="fa-solid fa-play" id="control-icon"></i></div>
-                    <div><i class="fa-solid fa-forward"></i></div>
+                    <input type="range" value="0" id="progress">
+                    
+                    <div class="controls">
+                        <div><i class="fa-solid fa-backward"></i></div>
+                        <div onclick="playPause()"><i class="fa-solid fa-play" id="control-icon"></i></div>
+                        <div><i class="fa-solid fa-forward"></i></div>
+                    </div>
                 </div>
+
+            </div>
+        
+            <div class="player-2 hide-r-player">
+
             </div>
         </div>
     </div>
