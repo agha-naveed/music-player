@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <div class="root">
+        <div class="main-body">
+            <div class="player p-20">
+                <nav>
+                    <div class="arrow-down">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </nav>
+                
+                <div class="artist-info">
+                    <img src="img/pic1.jpg" alt="" class="song-img"/>
+                    <h2>Ya Raza as Mola</h2>
+                    <p>Kazmi Brothers110</p>
+                </div>
+
+                <audio controls id="song">
+                    <source src="Audios/MOLA REZA JAAN as  Manqabat Imam Raza as  New Manqabat Kazmi Brothers 110  2024.mp3" type="audio/mp3" />
+                </audio>
+                <input type="range" value="0" id="progress">
+                <div class="controls">
+                    <div><i class="fa-solid fa-backward"></i></div>
+                    <div onclick="playPause()">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div><i class="fa-solid fa-forward"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

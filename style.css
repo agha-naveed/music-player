@@ -1,0 +1,127 @@
+:root {
+    --bg-color: #ffe0e5;
+    --color: #f53192;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.root {
+    width: 100%;
+    height: 100%;
+}
+.main-body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(27, 27, 27);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+audio {
+    display: none;
+}
+.player {
+    background-color: var(--bg-color);
+    width: 400px;
+    height: 600px;
+    display: grid;
+}
+.player nav {
+    display: grid;
+    width: 100%;
+    text-align: right;
+}
+.arrow-down i {
+    cursor: pointer;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    color: rgba(255, 26, 26, 1);
+    width: 30px;
+    height: 30px;
+    padding: 5px 6px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+
+.artist-info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.artist-info img {
+    width: 12rem;
+    border-radius: 50%;
+}
+
+#progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: var(--color);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: var(--color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    background-color: #fff;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--color);
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
+}
+.controls div img {
+    width: 25px;
+}
+.controls div:nth-child(2) {
+    transform: scale(1.5);
+    color: white;
+    background-color: var(--color);
+}
+
+#play-song {
+    display: block;
+}
+#pause-song {
+    display: none;
+}
+/* GLobal Css */
+.p-20 {
+    padding: 20px;
+}
