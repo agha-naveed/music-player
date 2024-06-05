@@ -15,7 +15,7 @@ let playPause = () => {
             icon.remove('fa-play')
             icon.add('fa-pause')
         }
-        else {
+        else if(icon.contains('fa-pause')) {
             song.pause()
             icon.remove('fa-pause')
             icon.add('fa-play')
@@ -25,22 +25,16 @@ let playPause = () => {
     }
 }
 
-let fn = async () => {
-    if(await song.play() == true) {
-        setInterval(() => {
-            progress.value = song.currentTime;
-        })
-    }
-}
-fn()
 
-progress.addEventListener('change', () => {
-    try {
-        song.play()
-        song.currentTime = progress.value
-        controlIcn.classList.add('fa-pause')
-        controlIcn.classList.add('fa-play')
-    } catch(err) {
-        console.warn(err)
-    }
+controlIcn.addEventListener('click', playPause);
+
+song.addEventListener('timeupdate', () => {
+    progress.value = song.currentTime;
+});
+
+progress.addEventListener('input', () => {
+    song.play()
+    song.currentTime = progress.value
+    controlIcn.classList.add('fa-pause')
+    controlIcn.classList.remove('fa-play')
 })
