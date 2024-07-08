@@ -1,56 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css" /> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player | Agha Naveed</title>
+    <meta name="author" content="Agha Naveed" />
+    <meta name="description" content="Agha Naveed | Music Player" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Music Player, Agha Naveed, Syed Naveed Abbas" />
+    <link rel="shortcut icon" href="img/front_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     
     <div class="root">
+
+        <div class="background-image"></div>
+        
         <div class="main-body">
+            <h3 id="developer-info">Developer:<br/>S. Naveed Abbas</h3>
             <div class="player hide-l-player">
 
                 <div class="playing p-t-20 p-x-20">
                     <nav>
                         <div class="arrow-down">
                             <i class="fa-solid fa-angle-right turn-arrow"></i>
+                            <div class="playlist-tag">
+                                <p>Playlist</p>
+                                <i class="fa-solid fa-sort-down"></i>
+                            </div>
                         </div>
                     </nav>
                     
                     <div class="artist-info">
-                        <img src="img/pic1.jpg" alt="" class="ar-img"/>
-                        <h2 class="s-title">Ya Raza as Mola</h2>
-                        <p class="ar-name">Kazmi Brothers110</p>
+                        <div class="artist-image-div">
+                            <img src="img/front_logo.png" alt="" class="ar-img" draggable="false" />
+                            <img src="img/cd-image.png" class="cd-img" draggable="false"/>
+                        </div>
+                        <h2 class="s-title">Music Player</h2>
+                        <p class="ar-name">by: Naveed Abbas</p>
                     </div>
 
                 </div>
 
                 <div class="fixed-controls p-b-20 p-x-20">
                     <audio id="song">
-                        <source src="Audios/MOLA REZA JAAN as  Manqabat Imam Raza as  New Manqabat Kazmi Brothers 110  2024.mp3" type="audio/mp3" />
                     </audio>
 
                     <input type="range" value="0" id="progress">
                     
                     <div class="controls">
-                        <div><i class="fa-solid fa-backward"></i></div>
+                        <div onclick="playPrevious()"><i class="fa-solid fa-backward"></i></div>
                         <div onclick="playPause()"><i class="fa-solid fa-play" id="control-icon"></i></div>
-                        <div><i class="fa-solid fa-forward"></i></div>
+                        <div onclick="playNext()"><i class="fa-solid fa-forward"></i></div>
                     </div>
                 </div>
 
             </div>
         
-            <div class="player-2 hide-r-player">
+            <div class="player-2 p-t-20 p-b-20 p-x-20 hide-r-player">
+                <div class="sorting-searching">
+                    <div class="sort-div">
+                        <select name="" id="sort-options">
+                            <option value="" selected>Sort by:</option>
+                            <option value="name">Name</option>
+                            <option value="date" id="year">Date</option>
+                         </select>
+                    </div>
+                    <div class="search-div">
+                        <input type="text" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="search-items">
+                    <div class="audio-box-body">
+                        
+                    </div>
+                </div>
+
+                <div class="playlist-song">
+                    
+                </div>
 
             </div>
         </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="linkedlist.js"></script>
 </body>
 </html>
