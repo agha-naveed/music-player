@@ -1,24 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
-@font-face {
-    font-family: 'Poppins';
-    src: url(Font/Poppins-Bold.ttf);
-}
-@font-face {
-    font-family: 'Poppins';
-    src: url(Font/Poppins-Light.ttf);
-}
-@font-face {
-    font-family: 'Poppins';
-    src: url(Font/Poppins-Thin.ttf);
-}
-@font-face {
-    font-family: 'Poppins';
-    src: url(Font/Poppins-Regular.ttf);
-}
-@font-face {
-    font-family: 'Poppins';
-    src: url(Font/Poppins-Medium.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
     --bg-color: #ffe0e5;

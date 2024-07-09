@@ -81,8 +81,25 @@ playlist[0].item.appendNode({
     artist: 'NoCopyrightSounds',
     year: 2024,
     url: "./Audios/NIVIRO  Without You feat Justin J Moore  Happy Hardcore  NCS  Copyright Free Music.mp3",
-    image: "./img/NCS-Niviro.png"
+    image: "https://i.ytimg.com/vi/z-SdpbalM8k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWtYNmdwL6UaJcjoF_futgx_Xqgg"
 })
+playlist[0].item.appendNode({
+    title: 'Jim Yosef - Firefly | Progressive House | NCS - Copyright Free Music',
+    displayTitle: 'Jim Yosef - Firefly',
+    artist: 'NoCopyrightSounds',
+    year: 2015,
+    url: "./Audios/Jim Yosef  Firefly  Progressive House  NCS  Copyright Free Music.mp3",
+    image: "https://i.ytimg.com/vi/x_OwcYTNbHs/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARglIEQofzAP&rs=AOn4CLAXH8UBN_nrHMuvgDwcxWgcjX6GiA"
+})
+playlist[0].item.appendNode({
+    title: 'Robin Hustin x TobiMorrow - Light It Up (feat. Jex) | Future Bounce | NCS - Copyright Free Music',
+    displayTitle: 'Robin Hustin x TobiMorrow',
+    artist: 'NoCopyrightSounds',
+    year: 2018,
+    url: "./Audios/Robin Hustin x TobiMorrow  Light It Up feat Jex  Future Bounce  NCS  Copyright Free Music.mp3",
+    image: "https://i.ytimg.com/vi/bdE_SyHad90/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhQIB8ofzAP&rs=AOn4CLCYMnS-TsUZ-635keySASgyr_JtJg"
+})
+
     
 // ---------------------- Audios Ended ----------------------
 // ----------------------------------------------------------
@@ -97,7 +114,7 @@ let addingToPlaylist = (index = 0, playListDiv) => {
             <div class="row main-playlist">
                 <div id="noha-playlist" class="item-playlist" onClick='togglePlayList(this, "${index}")'>
                     <div class="row-image">
-                        <img src="img/noha_logo_circle.png" alt="" />
+                        <img src="img/Bg_music.webp" alt="" />
                     </div>
                     <div class="row-detail">
                         <h4>`+ l.name +`</h4>
