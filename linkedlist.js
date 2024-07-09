@@ -61,11 +61,11 @@ let playlist = [
         item: new List(),
     },
     {
-        name: 'Manqabat',
+        name: 'Slow Music',
         item: new List()
     },
     {
-        name: 'Qaseeda',
+        name: 'Slow + Reverb',
         item: new List()
     },
 ]
