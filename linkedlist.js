@@ -127,6 +127,14 @@ playlist[1].item.appendNode({
     url: "./Audios/National anthem of the United States of America.mp3",
     image: "https://thumbs.dreamstime.com/b/american-flag-high-resolution-white-44037781.jpg"
 })
+playlist[1].item.appendNode({
+    title: 'National Anthem of Argentine | Oíd, mortales, el grito sagrado - Libertad, libertad, libertad',
+    displayTitle: 'Argentine National Anthem',
+    artist: 'Argentina',
+    year: 1813,
+    url: "./Audios/Argentine National Anthem  Himno Nacional Argentino ESEN.mp3",
+    image: "https://cdn.britannica.com/18/147118-050-7F820ED5/flag-Argentina-2010.jpg"
+})
 
 
 // ---------------------- Audios Ended ----------------------
