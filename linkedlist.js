@@ -61,7 +61,7 @@ let playlist = [
         item: new List(),
     },
     {
-        name: 'Slow Music',
+        name: 'National Anthem',
         item: new List()
     },
     {
@@ -74,7 +74,8 @@ let playlist = [
 // ----------------------------------------------------------
 // ------------------------ Audios --------------------------
 
-// Background Music
+// ---------  Backgroud Music  -----------
+
 playlist[0].item.appendNode({
     title: 'NIVIRO  Without You feat Justin J Moore  Happy Hardcore  NCS  Copyright Free Music',
     displayTitle: 'NIVIRO Without You',
@@ -100,7 +101,34 @@ playlist[0].item.appendNode({
     image: "https://i.ytimg.com/vi/bdE_SyHad90/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhQIB8ofzAP&rs=AOn4CLCYMnS-TsUZ-635keySASgyr_JtJg"
 })
 
-    
+// ---------  National Anthem  -----------
+
+playlist[1].item.appendNode({
+    title: 'Pakistan National Anthem | پاکستانی قومی ترانہ | Pak Sar Zameen Shaad Baad',
+    displayTitle: 'Pakistan National Anthem',
+    artist: 'Pakistan',
+    year: 1954,
+    url: "./Audios/Pakistan National Anthem.mp3",
+    image: "https://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg"
+})
+playlist[1].item.appendNode({
+    title: 'National Anthem of Sweden Du gamla, Du fria, Du fjällhöga nord',
+    displayTitle: 'Sweden National Anthem',
+    artist: 'Sweden',
+    year: 1933,
+    url: "./Audios/National Anthem of Sweden  Du Gamla Du Fria.mp3",
+    image: "https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg"
+})
+playlist[1].item.appendNode({
+    title: 'National Anthem of United States of America (USA) | The Star-Spangled Banner',
+    displayTitle: 'American National Anthem',
+    artist: 'USA',
+    year: 1931,
+    url: "./Audios/National anthem of the United States of America.mp3",
+    image: "https://thumbs.dreamstime.com/b/american-flag-high-resolution-white-44037781.jpg"
+})
+
+
 // ---------------------- Audios Ended ----------------------
 // ----------------------------------------------------------
 // --------------------- Adding Nodes -----------------------
