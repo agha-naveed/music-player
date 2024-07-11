@@ -65,7 +65,7 @@ let playlist = [
         item: new List()
     },
     {
-        name: 'Slow + Reverb',
+        name: 'Poem',
         item: new List()
     },
 ]
@@ -73,6 +73,7 @@ let playlist = [
 // ---------------------- Array Ended -----------------------
 // ----------------------------------------------------------
 // ------------------------ Audios --------------------------
+
 
 // ---------  Backgroud Music  -----------
 
@@ -100,6 +101,7 @@ playlist[0].item.appendNode({
     url: "./Audios/Robin Hustin x TobiMorrow  Light It Up feat Jex  Future Bounce  NCS  Copyright Free Music.mp3",
     image: "https://i.ytimg.com/vi/bdE_SyHad90/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhQIB8ofzAP&rs=AOn4CLCYMnS-TsUZ-635keySASgyr_JtJg"
 })
+
 
 // ---------  National Anthem  -----------
 
@@ -134,6 +136,26 @@ playlist[1].item.appendNode({
     year: 1813,
     url: "./Audios/Argentine National Anthem  Himno Nacional Argentino ESEN.mp3",
     image: "https://cdn.britannica.com/18/147118-050-7F820ED5/flag-Argentina-2010.jpg"
+})
+
+
+// ---------  Poem  -----------
+
+playlist[2].item.appendNode({
+    title: 'Wheels On The Bus Go Round And Round | Nursery Rhymes | Baby Songs',
+    displayTitle: 'Wheels on the Bus Go Round',
+    artist: 'FMD',
+    year: 2018,
+    url: "./Audios/Wheels On The Bus Go Round And Round  Nursery Rhymes  Baby Songs   No Copyright.mp3",
+    image: "https://i.ytimg.com/vi/GNpS4PFXudE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA1ORc9m-Bu5jqwgS-ONbBFbFwb5g"
+})
+playlist[2].item.appendNode({
+    title: 'Baa Baa Black Sheep Song  Nursery Rhyme for Kids No Copyright',
+    displayTitle: 'Baa Baa Black Sheep',
+    artist: 'FMD',
+    year: 2018,
+    url: "./Audios/Baa Baa Black Sheep Song  Nursery Rhyme for Kids No Copyright.mp3",
+    image: "https://cdn.firstcry.com/education/2022/08/24142823/Baa-Baa-Black-Sheep-Nursery-Rhyme.jpg"
 })
 
 
