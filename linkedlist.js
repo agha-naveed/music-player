@@ -157,6 +157,14 @@ playlist[2].item.appendNode({
     url: "./Audios/Baa Baa Black Sheep Song  Nursery Rhyme for Kids No Copyright.mp3",
     image: "https://cdn.firstcry.com/education/2022/08/24142823/Baa-Baa-Black-Sheep-Nursery-Rhyme.jpg"
 })
+playlist[2].item.appendNode({
+    title: `Japanese Poem | 'Marching March' | Nonochan (Nonoka Murakata) `,
+    displayTitle: 'Marching March',
+    artist: 'Nonoka Murakata',
+    year: 2022 - 23,
+    url: "https://www.youtube.com/watch?v=tUpm4FmdkHA&ab_channel=ZainaQaiser",
+    image: "https://i.mydramalist.com/Z8EVrJ_5f.jpg"
+})
 
 
 // ---------------------- Audios Ended ----------------------
